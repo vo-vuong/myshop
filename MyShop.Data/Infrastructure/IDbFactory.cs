@@ -1,9 +1,10 @@
-﻿using System;
+﻿using MyShop.Data;
+using System;
 
-namespace TeduShop.Data.Infrastructure
+namespace MyShop.Data.Infrastructure
 {
     public interface IDbFactory : IDisposable
     {
-        TeduShopDbContext Init();
+        MyShopDbContext Init();
     }
 }

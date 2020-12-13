@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TeduShop.Data.Infrastructure
+﻿namespace MyShop.Data.Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {
         private readonly IDbFactory dbFactory;
-        private TeduShopDbContext dbContext;
+        private MyShopDbContext dbContext;
 
         public UnitOfWork(IDbFactory dbFactory)
         {
             this.dbFactory = dbFactory;
         }
 
-        public TeduShopDbContext DbContext
+        public MyShopDbContext DbContext
         {
             get { return dbContext ?? (dbContext = dbFactory.Init()); }
         }

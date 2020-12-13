@@ -1,11 +1,11 @@
 ﻿using System.Data.Entity;
-using TeduShop.Model.Models;
+using MyShop.Model.Models;
 
-namespace TeduShop.Data
+namespace MyShop.Data
 {
-    public class TeduShopDbContext : DbContext
+    public class MyShopDbContext : DbContext
     {
-        public TeduShopDbContext() : base("MyShopConnection")
+        public MyShopDbContext() : base("MyShopConnection")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }

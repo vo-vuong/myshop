@@ -1,12 +1,14 @@
-﻿namespace TeduShop.Data.Infrastructure
+﻿using MyShop.Data.Infrastructure;
+
+namespace MyShop.Data.Infrastructure
 {
     public class DbFactory : Disposable, IDbFactory
     {
-        private TeduShopDbContext dbContext;
+        private MyShopDbContext dbContext;
 
-        public TeduShopDbContext Init()
+        public MyShopDbContext Init()
         {
-            return dbContext ?? (dbContext = new TeduShopDbContext());
+            return dbContext ?? (dbContext = new MyShopDbContext());
         }
 
         protected override void DisposeCore()

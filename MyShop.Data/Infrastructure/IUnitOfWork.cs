@@ -1,4 +1,4 @@
-﻿namespace TeduShop.Data.Infrastructure
+﻿namespace MyShop.Data.Infrastructure
 {
     public interface IUnitOfWork
     {
