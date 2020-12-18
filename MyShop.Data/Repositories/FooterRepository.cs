@@ -1,9 +1,9 @@
 ﻿using MyShop.Data.Infrastructure;
 using MyShop.Model.Models;
 
-namespace TeduShop.Data.Repositories
+namespace MyShop.Data.Repositories
 {
-    public interface IFooterRepository
+    public interface IFooterRepository : IRepository<Footer>
     {
     }
 

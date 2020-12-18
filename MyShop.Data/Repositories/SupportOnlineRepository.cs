@@ -1,9 +1,9 @@
 ﻿using MyShop.Data.Infrastructure;
 using MyShop.Model.Models;
 
-namespace TeduShop.Data.Repositories
+namespace MyShop.Data.Repositories
 {
-    public interface ISupportOnlineRepository
+    public interface ISupportOnlineRepository : IRepository<SupportOnline>
     {
     }
 
